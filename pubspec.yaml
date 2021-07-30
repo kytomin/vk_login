@@ -1,0 +1,25 @@
+name: vk_login
+description: Service for authorization via VK.
+version: 1.0.0
+
+repository: https://github.com/kuthon/vk_login
+homepage: https://github.com/kuthon/vk_login
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  webview_flutter: ^2.0.10
+  shared_preferences: ^2.0.6
+  http: ^0.13.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
