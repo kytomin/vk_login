@@ -1,3 +1,4 @@
+/// VK user
 class VkUser {
   late final int id;
   late final String firstName;
@@ -38,23 +39,30 @@ class VkUser {
   /// 0 - do not show date of birth
   late final int birthDateVisibility;
 
+  ///home town
   late final String homeTown;
 
+  /// country id
   late final int? countryId;
+
+  /// country title
   late final String? countryTitle;
 
+  /// city id
   late final int? cityId;
 
+  /// city title
   late final String? cityTitle;
 
+  /// status
   late final String status;
 
+  /// phone
   late final String phone;
 
   /// [accountGetProfileInfo] is a response from account.getProfileInfo
   /// [usersGet] is a response from users.get with photo_50,photo_100,photo_200,photo_max_orig params
   VkUser.fromJSON(accountGetProfileInfo, usersGet) {
-
     this.id = accountGetProfileInfo['id'];
     this.photo50 = usersGet['photo_50'];
     this.photo100 = usersGet['photo_100'];
@@ -66,7 +74,8 @@ class VkUser {
     this.screenName = accountGetProfileInfo['screen_name'];
     this.sex = accountGetProfileInfo['sex'];
     this.relation = accountGetProfileInfo['relation'];
-    this.relationPartnerId = accountGetProfileInfo['relation_partner'] != null ? accountGetProfileInfo['relation_partner']['id'] : null;
+    this.relationPartnerId =
+        accountGetProfileInfo['relation_partner'] != null ? accountGetProfileInfo['relation_partner']['id'] : null;
     this.relationPending = accountGetProfileInfo['relation_pending'];
     this.birthDate = accountGetProfileInfo['bdate'];
     this.birthDateVisibility = accountGetProfileInfo['bdate_visibility'];

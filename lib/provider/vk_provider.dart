@@ -14,9 +14,16 @@ class VkProvider with ChangeNotifier {
   VkUser? _profile;
   bool _isInit = false;
 
+  /// VK token
   String? get token => _token;
+
+  /// User profile
   VkUser? get profile => _profile;
+
+  /// id your apps
   int get appId => _appId;
+
+  /// have you called the init () method
   bool get isInit => _isInit;
 
   /// first you must call the init() method
@@ -60,6 +67,7 @@ class VkProvider with ChangeNotifier {
     }
   }
 
+  /// logout
   Future<void> logout() async {
     _token = null;
     _profile = null;

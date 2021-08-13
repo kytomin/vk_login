@@ -1,6 +1,6 @@
 name: vk_login
-description: Service for authorization via VK.
-version: 1.0.0
+description: Service for authorization via VK. Authorization takes place via webview. You do not need to have a registered VK standalone application
+version: 1.0.1
 
 repository: https://github.com/kuthon/vk_login
 homepage: https://github.com/kuthon/vk_login

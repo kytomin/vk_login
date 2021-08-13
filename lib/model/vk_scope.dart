@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 
+/// token permissions
 enum VKScope {
   friends,
   photos,
